@@ -1,0 +1,20 @@
+{
+  "name": "touristapi",
+  "version": "0.0.1",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "author": "teahhhakyu <teahhakyu@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.1",
+    "restify": "^4.1.1"
+    
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}

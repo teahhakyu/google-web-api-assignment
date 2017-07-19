@@ -1,0 +1,33 @@
+
+<div class="row">
+
+        <div id="customer-table">
+            <table class="table table-hover">
+                <thead>
+                    <th>Place</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>Activity</th>
+                    <th><i class="fa fa-trash" ng-click="deleteAll()"></i>
+                    </th>
+                </thead>
+                <tr ng-repeat="customer in customers">
+                    <td>{{customer.place}}</td>
+                    <td>{{customer.country}}</td>
+                    <td>{{customer.state}}</td>
+                    <td>{{customer.activity}}</td>
+                    <td><i class="fa fa-trash" ng-click="delete($index)"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <pagination total-items="customers.length" ng-model="currentPage" items-per-page="pageSize"></pagination>
+    
+    <div>
+        <table>
+             <tr ng-repeat="book in books">
+                <td>{{result}}</td><td>{{book.id}}</td><td>{{ book.volumeInfo.title }}</td><td><a href="#detail/{{ book.id }}{{ book.volumeInfo.title }}">view</a></td>
+              </tr>
+        </table>
+    </div>
+</div>
